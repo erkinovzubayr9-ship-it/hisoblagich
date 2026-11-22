@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hisoblagich</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 720px; margin: 48px auto; padding: 0 20px; line-height: 1.6; }
+    button, input { padding: 9px 12px; margin: 5px 3px 5px 0; }
+    section { padding: 16px; border: 1px solid #ddd; border-radius: 10px; }
+  </style>
+</head>
+<body>
+<h1>Hisoblagich</h1>
+<p id="count">0</p>
+<button id="minus">-</button> <button id="plus">+</button>
+<script>
+let count = 0;
+const output = document.querySelector('#count');
+document.querySelector('#plus').onclick = () => output.textContent = ++count;
+document.querySelector('#minus').onclick = () => output.textContent = --count;
+</script>
+</body>
+</html>
